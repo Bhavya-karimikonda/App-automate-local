@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-22T22:01:27 IST" name="Default suite" finished-at="2023-05-22T22:01:49 IST" duration-ms="22288">
+  <suite started-at="2023-06-29T19:12:05 IST" name="Default suite" finished-at="2023-06-29T19:12:33 IST" duration-ms="27914">
     <groups>
     </groups>
-    <test started-at="2023-05-22T22:01:27 IST" name="Default test" finished-at="2023-05-22T22:01:49 IST" duration-ms="22288">
+    <test started-at="2023-06-29T19:12:05 IST" name="Default test" finished-at="2023-06-29T19:12:33 IST" duration-ms="27914">
       <class name="appium_bee.TestngWithEmulator">
-        <test-method is-config="true" signature="setup()[pri:0, instance:appium_bee.TestngWithEmulator@2c35e847]" started-at="2023-05-22T22:01:27 IST" name="setup" finished-at="2023-05-22T22:01:45 IST" duration-ms="18765" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:appium_bee.TestngWithEmulator@7bd4937b]" started-at="2023-06-29T19:12:05 IST" name="setup" finished-at="2023-06-29T19:12:28 IST" duration-ms="22595" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testSearch()[pri:0, instance:appium_bee.TestngWithEmulator@2c35e847]" started-at="2023-05-22T22:01:45 IST" name="testSearch" finished-at="2023-05-22T22:01:49 IST" duration-ms="3133" status="PASS">
+        <test-method signature="launchBrowser()[pri:0, instance:appium_bee.TestngWithEmulator@7bd4937b]" started-at="2023-06-29T19:12:28 IST" name="launchBrowser" finished-at="2023-06-29T19:12:28 IST" duration-ms="265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="testSearch()[pri:0, instance:appium_bee.TestngWithEmulator@7bd4937b]" started-at="2023-06-29T19:12:28 IST" name="testSearch" finished-at="2023-06-29T19:12:33 IST" duration-ms="4634" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearch -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:appium_bee.TestngWithEmulator@2c35e847]" started-at="2023-05-22T22:01:49 IST" name="teardown" finished-at="2023-05-22T22:01:49 IST" duration-ms="347" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:appium_bee.TestngWithEmulator@7bd4937b]" started-at="2023-06-29T19:12:33 IST" name="teardown" finished-at="2023-06-29T19:12:33 IST" duration-ms="390" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

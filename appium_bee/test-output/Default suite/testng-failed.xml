@@ -5,6 +5,7 @@
     <classes>
       <class name="appium_bee.TestngWithEmulator">
         <methods>
+          <include name="launchBrowser"/>
           <include name="testSearch"/>
           <include name="setup"/>
           <include name="teardown"/>

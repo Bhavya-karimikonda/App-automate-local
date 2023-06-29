@@ -1,6 +1,8 @@
 package appium_bee;
 
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -19,7 +21,7 @@ import java.util.List;
 
 // WORKING WITH LOCAL ENVIRONMENT FOR APP AUTOMATE
 
-public class TestngWithEmulator {
+public class Baseclass {
 	
 	 AndroidDriver driver;
 	
@@ -35,8 +37,6 @@ public class TestngWithEmulator {
 		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Device_B");
 		
 		capabilities.setCapability(MobileCapabilityType.APP, "/Users/bhavyakarimikonda/git/appautomatelocal/appium_bee/WikipediaSample.apk" );
-
-		capabilities.setCapability("newCommandTimeout", 2000);
 		
 		URL url = new URL("http://localhost:4723/wd/hub");
 		
@@ -46,23 +46,26 @@ public class TestngWithEmulator {
 		
 	}
 	
+	
 	@Test
-	public void launchApp() {
+    public void openWikiSearch() throws InterruptedException {
+	      
 		WebElement searchSelector = driver.findElement(By.id("org.wikipedia.alpha:id/search_container"));
-		searchSelector.click();
-	}
+		 searchSelector.click();
+		 
+        }
 	
 	@Test
     public void searchBStack() throws InterruptedException {
 	      
 	            WebElement searchSelector = driver.findElement(By.id("org.wikipedia.alpha:id/search_container"));
 	            searchSelector.click();
-	            Thread.sleep(200);
+	            Thread.sleep(2000);
 	            WebElement insertTextSelector = driver.findElement(By.id("org.wikipedia.alpha:id/search_src_text"));
 	            insertTextSelector.sendKeys("BrowserStack");
 	            Thread.sleep(1000);
 	            List<WebElement> allProductsName = driver.findElements(By.className("android.widget.TextView"));
-	            Assert.assertTrue(allProductsName.size() > 0);
+	            AssertJUnit.assertTrue(allProductsName.size() > 0);
         }
 	
 	@AfterTest

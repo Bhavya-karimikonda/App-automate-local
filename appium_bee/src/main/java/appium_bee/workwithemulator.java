@@ -23,15 +23,13 @@ public class workwithemulator {
 		capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11.0");
 		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Device_B");
 		
-		capabilities.setCapability(MobileCapabilityType.APP, "/Users/bhavyakarimikonda/eclipse-workspace/appium_bee/WikipediaSample.apk" );
+		capabilities.setCapability(MobileCapabilityType.APP, "/Users/bhavyakarimikonda/git/appautomatelocal/appium_bee/WikipediaSample.apk");
 		
 		URL url = new URL("http://localhost:4723/wd/hub");
 		
 		AndroidDriver driver = new AndroidDriver(url, capabilities);
 		
 		driver.quit();
-		 
 	}
 	
-
 }
