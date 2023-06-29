@@ -19,7 +19,7 @@ import java.util.List;
 
 // WORKING WITH LOCAL ENVIRONMENT FOR APP AUTOMATE
 
-public class TestngWithEmulator {
+public class BaseClass {
 	
 	 AndroidDriver driver;
 	
@@ -34,7 +34,7 @@ public class TestngWithEmulator {
 		capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11.0");
 		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Device_B");
 		
-		capabilities.setCapability(MobileCapabilityType.APP, "/Users/bhavyakarimikonda/git/appautomatelocal/appium_bee/WikipediaSample.apk" );
+		capabilities.setCapability(MobileCapabilityType.APP, "/Users/bhavyakarimikonda/git/./../WikipediaSample.apk" );
 
 		capabilities.setCapability("newCommandTimeout", 2000);
 		
