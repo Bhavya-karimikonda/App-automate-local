@@ -19,7 +19,7 @@ import java.util.List;
 
 // WORKING WITH LOCAL ENVIRONMENT FOR APP AUTOMATE
 
-public class BaseClass {
+public class baseClass {
 	
 	 AndroidDriver driver;
 	
