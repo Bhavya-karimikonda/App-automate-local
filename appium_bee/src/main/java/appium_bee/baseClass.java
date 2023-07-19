@@ -17,8 +17,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
 
-// WORKING WITH LOCAL ENVIRONMENT FOR APP AUTOMATE
-
 public class baseClass {
 	
 	 AndroidDriver driver;
